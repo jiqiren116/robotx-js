@@ -11,7 +11,7 @@ function randomDelay(min, max) {
 
 // 定义API URL模板
 // const apiUrlTemplate = 'https://www.ximalaya.com/revision/album/v1/getTracksList?albumId={albumId}&pageNum={pageNum}&pageSize=100';
-//https://www.ximalaya.com/revision/album/v1/getTracksList?albumId=12817863&pageNum=1&pageSize=100
+// https://www.ximalaya.com/revision/album/v1/getTracksList?albumId=12817863&pageNum=1&pageSize=100
 
 // 获取专辑ID
 const albumId = 3558668; // 示例ID，请替换为你实际需要的专辑ID
@@ -23,9 +23,9 @@ function getTotalPages(totalCount) {
 
 // 抓取单页数据
 async function fetchPage(pageNum) {
-    // const url = apiUrlTemplate.replace('{albumId}', albumId).replace('{pageNum}', pageNum); // 替换 URL 中的占位符
+    const url = apiUrlTemplate.replace('{albumId}', albumId).replace('{pageNum}', pageNum); // 替换 URL 中的占位符
     // const url = 'http://192.168.117.70:8080/workhours/approve/getList'
-    const url = 'https://jsonplaceholder.typicode.com/todos/';
+    // const url = 'https://jsonplaceholder.typicode.com/todos/';
 
     const response = await fetch(url); // 发起 GET 请求
     if (!response.ok) {
