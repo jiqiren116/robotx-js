@@ -1,3 +1,7 @@
+/**
+ * 读取 temp.json 文件，按照 playCount 字段从大到小排序，并输出到 sorted.json 文件中
+ */
+
 // 读取 temp.json 文件并进行排序
 // const fs = require('fs');
 import fs from 'fs'; // 导入 fs 模块，用于文件系统操作
